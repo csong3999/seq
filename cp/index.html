@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双色球智能选号系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>双色球智能选号</h1>
+        
+        <!-- 按钮区域移到上方 -->
+        <div class="buttons">
+            <button id="randomSelect" class="glow-button">机选号码</button>
+            <button id="clearSelect" class="neon-button">
+                <span></span><span></span><span></span><span></span>
+                清空选择
+            </button>
+        </div>
+
+        <!-- 中央号码显示区 -->
+        <div class="main-numbers">
+            <div class="number-display-main">
+                <div class="number-group">
+                    <div id="mainRedBalls" class="main-red-group"></div>
+                    <div class="plus-sign">+</div>
+                    <div id="mainBlueBall" class="main-blue-group"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 选号区域 -->
+        <div class="selection-area">
+            <div class="red-balls">
+                <h2>红球区（选6个）</h2>
+                <div id="redBalls" class="balls-grid"></div>
+            </div>
+            <div class="blue-balls">
+                <h2>蓝球区（选1个）</h2>
+                <div id="blueBalls" class="balls-grid"></div>
+            </div>
+        </div>
+        
+        <div class="loading-overlay" id="loading">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">正在加载数据...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
